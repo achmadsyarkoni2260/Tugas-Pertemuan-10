@@ -1,0 +1,9 @@
+SELECT
+  kendaraan.`nama_kendaraan`,type.`nama_type`,jenis.`nama_jenis`,mesin.`nama_mesin`
+FROM TYPE
+JOIN kendaraan
+  ON type.`kendaraan_id`=kendaraan.`id_kendaraan`
+JOIN jenis
+  ON type.`jenis_id`=jenis.`id_jenis`
+JOIN mesin
+  ON type.`mesin_id`=mesin.`id_mesin`
